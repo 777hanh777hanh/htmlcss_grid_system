@@ -1,3 +1,5 @@
-.container {
-    background-color: orange;
+.card {
+    border: 1px dashed #ff4081;
+    text-align: center;
+    border-collapse: collapse;
 }
