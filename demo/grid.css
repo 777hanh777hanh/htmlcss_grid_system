@@ -2,14 +2,15 @@
 /* No media query for `xs` since this is the default in Bootstrap */
 .container {
     --column-size: 12;
+    --spacer: 24px;
 
     width: 100%;
     /* căn giữa content */
     margin-left: auto;
     margin-right: auto;
     /* padding = 1/2 gutters (khoảng cách giữa các cột) */
-    padding-right: calc(var(--gutters) / 2);
-    padding-left: calc(var(--gutters) / 2);
+    padding-right: calc(var(--spacer) / 2);
+    padding-left: calc(var(--spacer) / 2);
 }
 
 container-fluid {
@@ -17,8 +18,17 @@ container-fluid {
 }
 
 .row {
+    --gutters: var(--spacer);
+
     display: flex;
     flex-wrap: wrap;
+    margin-right: calc(-0.5 * var(--gutters));
+    margin-left: calc(-0.5 * var(--gutters));
+}
+
+.row > * {
+    padding-left: calc(0.5 * var(--gutters));
+    padding-right: calc(0.5 * var(--gutters));
 }
 
 .col {
@@ -137,6 +147,25 @@ container-fluid {
     width: calc(100% / var(--column-size) * var(--column-number));
 }
 
+.g-0 {
+    --gutters: 0;
+}
+.g-1 {
+    --gutters: calc(0.25 * var(--spacer));
+}
+.g-2 {
+    --gutters: calc(0.5 * var(--spacer));
+}
+.g-3 {
+    --gutters: calc(1 * var(--spacer));
+}
+.g-4 {
+    --gutters: calc(1.5 * var(--spacer));
+}
+.g-5 {
+    --gutters: calc(3 * var(--spacer));
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
     .container {
@@ -219,6 +248,25 @@ container-fluid {
     }
     .col-sm-12 {
         --column-number: 12;
+    }
+
+    .g-sm-0 {
+        --gutters: 0;
+    }
+    .g-sm-1 {
+        --gutters: calc(0.25 * var(--spacer));
+    }
+    .g-sm-2 {
+        --gutters: calc(0.5 * var(--spacer));
+    }
+    .g-sm-3 {
+        --gutters: calc(1 * var(--spacer));
+    }
+    .g-sm-4 {
+        --gutters: calc(1.5 * var(--spacer));
+    }
+    .g-sm-5 {
+        --gutters: calc(3 * var(--spacer));
     }
 }
 
@@ -305,6 +353,25 @@ container-fluid {
     .col-md-12 {
         --column-number: 12;
     }
+
+    .g-md-0 {
+        --gutters: 0;
+    }
+    .g-md-1 {
+        --gutters: calc(0.25 * var(--spacer));
+    }
+    .g-md-2 {
+        --gutters: calc(0.5 * var(--spacer));
+    }
+    .g-md-3 {
+        --gutters: calc(1 * var(--spacer));
+    }
+    .g-md-4 {
+        --gutters: calc(1.5 * var(--spacer));
+    }
+    .g-md-5 {
+        --gutters: calc(3 * var(--spacer));
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -389,6 +456,25 @@ container-fluid {
     }
     .col-lg-12 {
         --column-number: 12;
+    }
+
+    .g-lg-0 {
+        --gutters: 0;
+    }
+    .g-lg-1 {
+        --gutters: calc(0.25 * var(--spacer));
+    }
+    .g-lg-2 {
+        --gutters: calc(0.5 * var(--spacer));
+    }
+    .g-lg-3 {
+        --gutters: calc(1 * var(--spacer));
+    }
+    .g-lg-4 {
+        --gutters: calc(1.5 * var(--spacer));
+    }
+    .g-lg-5 {
+        --gutters: calc(3 * var(--spacer));
     }
 }
 
@@ -477,6 +563,25 @@ container-fluid {
     .col-xl-12 {
         --column-number: 12;
     }
+
+    .g-xl-0 {
+        --gutters: 0;
+    }
+    .g-xl-1 {
+        --gutters: calc(0.25 * var(--spacer));
+    }
+    .g-xl-2 {
+        --gutters: calc(0.5 * var(--spacer));
+    }
+    .g-xl-3 {
+        --gutters: calc(1 * var(--spacer));
+    }
+    .g-xl-4 {
+        --gutters: calc(1.5 * var(--spacer));
+    }
+    .g-xl-5 {
+        --gutters: calc(3 * var(--spacer));
+    }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
@@ -561,5 +666,24 @@ container-fluid {
     }
     .col-xxl-12 {
         --column-number: 12;
+    }
+
+    .g-xxl-0 {
+        --gutters: 0;
+    }
+    .g-xxl-1 {
+        --gutters: calc(0.25 * var(--spacer));
+    }
+    .g-xxl-2 {
+        --gutters: calc(0.5 * var(--spacer));
+    }
+    .g-xxl-3 {
+        --gutters: calc(1 * var(--spacer));
+    }
+    .g-xxl-4 {
+        --gutters: calc(1.5 * var(--spacer));
+    }
+    .g-xxl-5 {
+        --gutters: calc(3 * var(--spacer));
     }
 }
