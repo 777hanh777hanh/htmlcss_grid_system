@@ -195,9 +195,12 @@ container-fluid {
     --gutters: calc(1 * var(--spacer));
 }
 .g-4 {
-    --gutters: calc(1.5 * var(--spacer));
+    --gutters: calc(1.25 * var(--spacer));
 }
 .g-5 {
+    --gutters: calc(1.5 * var(--spacer));
+}
+.g-6 {
     --gutters: calc(3 * var(--spacer));
 }
 
@@ -371,9 +374,12 @@ container-fluid {
         --gutters: calc(1 * var(--spacer));
     }
     .g-sm-4 {
-        --gutters: calc(1.5 * var(--spacer));
+        --gutters: calc(1.25 * var(--spacer));
     }
     .g-sm-5 {
+        --gutters: calc(1.5 * var(--spacer));
+    }
+    .g-sm-6 {
         --gutters: calc(3 * var(--spacer));
     }
 }
@@ -548,9 +554,12 @@ container-fluid {
         --gutters: calc(1 * var(--spacer));
     }
     .g-md-4 {
-        --gutters: calc(1.5 * var(--spacer));
+        --gutters: calc(1.25 * var(--spacer));
     }
     .g-md-5 {
+        --gutters: calc(1.5 * var(--spacer));
+    }
+    .g-md-6 {
         --gutters: calc(3 * var(--spacer));
     }
 }
@@ -725,9 +734,12 @@ container-fluid {
         --gutters: calc(1 * var(--spacer));
     }
     .g-lg-4 {
-        --gutters: calc(1.5 * var(--spacer));
+        --gutters: calc(1.25 * var(--spacer));
     }
     .g-lg-5 {
+        --gutters: calc(1.5 * var(--spacer));
+    }
+    .g-lg-6 {
         --gutters: calc(3 * var(--spacer));
     }
 }
@@ -904,9 +916,12 @@ container-fluid {
         --gutters: calc(1 * var(--spacer));
     }
     .g-xl-4 {
-        --gutters: calc(1.5 * var(--spacer));
+        --gutters: calc(1.25 * var(--spacer));
     }
     .g-xl-5 {
+        --gutters: calc(1.5 * var(--spacer));
+    }
+    .g-xl-6 {
         --gutters: calc(3 * var(--spacer));
     }
 }
@@ -1081,9 +1096,12 @@ container-fluid {
         --gutters: calc(1 * var(--spacer));
     }
     .g-xxl-4 {
-        --gutters: calc(1.5 * var(--spacer));
+        --gutters: calc(1.25 * var(--spacer));
     }
     .g-xxl-5 {
+        --gutters: calc(1.5 * var(--spacer));
+    }
+    .g-xxl-6 {
         --gutters: calc(3 * var(--spacer));
     }
 }
