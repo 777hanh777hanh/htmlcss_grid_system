@@ -394,37 +394,37 @@ container-fluid {
         width: 100%;
     }
 
-    .row-cols-md1 > * {
+    .row-cols-md-1 > * {
         --row-cols-number: 1;
 
         flex: 0 0 auto;
         width: calc(100% / var(--row-cols-number));
     }
-    .row-cols-md2 > * {
+    .row-cols-md-2 > * {
         --row-cols-number: 2;
 
         flex: 0 0 auto;
         width: calc(100% / var(--row-cols-number));
     }
-    .row-cols-md3 > * {
+    .row-cols-md-3 > * {
         --row-cols-number: 3;
 
         flex: 0 0 auto;
         width: calc(100% / var(--row-cols-number));
     }
-    .row-cols-md4 > * {
+    .row-cols-md-4 > * {
         --row-cols-number: 4;
 
         flex: 0 0 auto;
         width: calc(100% / var(--row-cols-number));
     }
-    .row-cols-md5 > * {
+    .row-cols-md-5 > * {
         --row-cols-number: 5;
 
         flex: 0 0 auto;
         width: calc(100% / var(--row-cols-number));
     }
-    .row-cols-md6 > * {
+    .row-cols-md-6 > * {
         --row-cols-number: 6;
 
         flex: 0 0 auto;
