@@ -132,8 +132,20 @@ table {
 /* font-family */
 button,
 input,
+[tabindex],
 select,
 textarea {
     font-family: inherit;
     font-size: 100%;
+}
+
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
 }
